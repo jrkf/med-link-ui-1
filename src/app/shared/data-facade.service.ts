@@ -626,7 +626,7 @@ export class DataFacadeService {
     // setInterval(() => this.scanAndConnect(),  60 * 1000);
     this.wakeFacadeService.setAlarm();
     this.scanAndConnect();
-    this.int0 = setInterval(() => this.scanAndConnect(),  5 * 60 * 1000);
+    this.int0 = setInterval(() => this.scanAndConnect(),  20 * 60 * 1000);
     appSettings.setNumber('int0', this.int0);
 
   }
